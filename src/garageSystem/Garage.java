@@ -35,17 +35,21 @@ public class Garage {
 	public double getPriceForChangeWheelsOfAllVehicles() {
 		double value = 0;
 		for (Vehicle vehicle : vehicles) {
-			value += priceByWheelChange * vehicle.getWheels();
+			if (vehicle != null) {
+				value += priceByWheelChange * vehicle.getWheels();
+			}
 		}
 		return value;
 	}
 	
 	public double getAverageMileageOfAllVehicles() {
 		double value = 0;
-		/* for (Vehicle vehicle : vehicles) {
-			value += priceByWheelChange * vehicle.getWheels();
-		} */
-		return value;
+		for (Vehicle vehicle : vehicles) {
+			if (vehicle != null) {
+				value += priceByWheelChange + vehicle.getMileage();
+			}
+		}
+		return value / totalVehicles;
 	} 
 
 	public Vehicle[] getVehicles() {
