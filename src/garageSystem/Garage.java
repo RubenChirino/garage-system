@@ -46,7 +46,7 @@ public class Garage {
 		double value = 0;
 		for (Vehicle vehicle : vehicles) {
 			if (vehicle != null) {
-				value += priceByWheelChange + vehicle.getMileage();
+				value += vehicle.getMileage();
 			}
 		}
 		return value / totalVehicles;
