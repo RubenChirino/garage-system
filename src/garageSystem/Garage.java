@@ -57,16 +57,15 @@ public class Garage {
 	}
 	
 	public Vehicle getVehicle(int id) {
-		Vehicle value = null;
-		for (Vehicle vehicle : vehicles) {
-			if (id == vehicle.getId()) {
-				value = vehicle;
+		Vehicle value = null;	
+		for (int i = 0; i < vehicles.length; i++) { 
+			if (vehicles[i] != null && id == vehicles[i].getId()) {			
+				value = vehicles[i];
 			}
 		}
 		if (value == null) {
 			System.out.println("The Vehicule with the provided ID was not found.");
 		}
-		
 		return value;
 	}
 	
