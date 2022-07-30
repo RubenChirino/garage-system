@@ -3,6 +3,7 @@ package vehicle;
 public abstract class Vehicle {
 
 	protected int id; /* 3) Encapsulation */
+	private String owner; /* 3) Encapsulation */
 	private String brand; /* 3) Encapsulation */
 	private double mileage; /* 3) Encapsulation */
 	protected int wheels; /* 3) Encapsulation */
@@ -10,7 +11,8 @@ public abstract class Vehicle {
 	private int capacity; /* 3) Encapsulation */
 	
 	/* === Constructor === */
-	public Vehicle(String brand, double mileage) {
+	public Vehicle(String owner, String brand, double mileage) {
+		this.owner = owner;
 		this.brand = brand;
 		this.mileage = mileage;
 		this.id = (int)(Math.random() * 100000 + 1);
@@ -19,6 +21,10 @@ public abstract class Vehicle {
 	/* === Getters === */
 	public int getId() {
 		return id;
+	}
+	
+	public String getOwner() {
+		return owner;
 	}
 	
 	public String getBrand() {
@@ -57,7 +63,7 @@ public abstract class Vehicle {
 	/* === Overrides === */ /* 4) Polymorphism */
 	@Override
 	public String toString() {
-		return "Vehicle [id=" + id + ", brand=" + brand + ", mileage=" + mileage + ", wheels=" + wheels + ", year="
+		return "Vehicle [id=" + id + ", owner=" + owner + ", brand=" + brand + ", mileage=" + mileage + ", wheels=" + wheels + ", year="
 				+ year + ", capacity=" + capacity + "]";
 	}
 	

@@ -5,8 +5,8 @@ public class Car extends Vehicle { /* 2) Heritage */
 	private int doors; /* 3) Encapsulation */
 	
 	/* === Constructor === */
-	public Car(String brand, double mileage, int doors) {
-		super(brand, mileage);
+	public Car(String owner, String brand, double mileage, int doors) {
+		super(owner, brand, mileage);
 		this.doors = doors;
 		this.wheels = 4;
 	}

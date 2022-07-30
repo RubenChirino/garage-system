@@ -19,13 +19,13 @@ public class GarageTest {
 		System.out.println("");
 		
 		// Vehicles Creation
-		Car car1 = new Car("Toyota", 33.000, 4); /* 1) Abstraccion */
-		Car car2 = new Car("Nissan", 67.000, 2); /* 1) Abstraccion */
-		Car car3 = new Car("Mercedes Benz", 67.000, 2); /* 1) Abstraccion */
-		Car car4 = new Car("BMW", 1.000, 2); /* 1) Abstraccion */
-		Motorcycle motorcycle1 = new Motorcycle("Yamaha", 3.000, 998); /* 1) Abstraccion */
-		Motorcycle motorcycle2 = new Motorcycle("Honda", 12.000, 286); /* 1) Abstraccion */
-		Motorcycle motorcycle3 = new Motorcycle("Suzuki ", 99.000, 544); /* 1) Abstraccion */
+		Car car1 = new Car("Ruben Chirino", "Toyota", 33.000, 4); /* 1) Abstraccion */
+		Car car2 = new Car("Maria Murillo", "Nissan", 67.000, 2); /* 1) Abstraccion */
+		Car car3 = new Car("Alejandra Rodriguez", "Mercedes Benz", 67.000, 2); /* 1) Abstraccion */
+		Car car4 = new Car("Elias Alvarez", "BMW", 1.000, 2); /* 1) Abstraccion */
+		Motorcycle motorcycle1 = new Motorcycle("Cesar Hernandez", "Yamaha", 3.000, 998); /* 1) Abstraccion */
+		Motorcycle motorcycle2 = new Motorcycle("Valentina Caseres", "Honda", 12.000, 286); /* 1) Abstraccion */
+		Motorcycle motorcycle3 = new Motorcycle("Bruno Martinez", "Suzuki ", 99.000, 544); /* 1) Abstraccion */
 		
 		// The Vehicles enter the garage
 		garage.addVehicle(car1);
